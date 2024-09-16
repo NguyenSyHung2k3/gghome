@@ -10,11 +10,6 @@ async function bootstrap() {
     console.log(`Server is running on port: 3000`);
   });
 
-  //hot reload configs
-  if (module.hot) {
-    module.hot.accept();
-    module.hot.dispose(() => app.close());
-}
 }
 
 bootstrap();
